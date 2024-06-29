@@ -1,4 +1,5 @@
 # Sinatraプロジェクトのサンプル
+Sinatraを使用する際の雛形の一例を置いておきます。
 
 ## セットアップ方法
 
@@ -7,12 +8,6 @@
 `Docker`を起動してから以下の説明に従ってください。（`Docker`をインストールしていない方は[こちらから](https://matsuand.github.io/docs.docker.jp.onthefly/get-started/#download-and-install-docker)）
 
 ```
-// このリポジトリをクローン
-$ git clone https://github.com/LiT-Kansai-Members-Org/lit-card-system-api.git
-
-// ディレクトリを移動
-$ cd lit-card-system-api
-
 // コンテナイメージをビルド
 $ make compose/build
 
