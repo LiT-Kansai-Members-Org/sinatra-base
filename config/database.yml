@@ -1,0 +1,18 @@
+default_env: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
+
+development:
+  <<: *default
+  database: back_end_development
+
+production:
+  <<: *default
+  database: back_end_production
+
+test:
+  <<: *default
+  database: back_end_test
