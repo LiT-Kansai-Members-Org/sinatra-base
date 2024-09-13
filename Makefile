@@ -8,7 +8,7 @@ compose/build:
 compose/up:
 	docker compose up
 
-.PHONY: db/setup db/migrate
+.PHONY: db/setup db/migrate db/seed
 
 # DBの初期構築
 db/setup:
@@ -18,6 +18,9 @@ db/setup:
 # DBのマイグレーション
 db/migrate:
 	docker compose run web bundle exec rake db:migrate
+
+db/seed:
+	docker compose run web bundle exec rake db:seed
 
 .PHONY: g/model g/route g/migrate
 
