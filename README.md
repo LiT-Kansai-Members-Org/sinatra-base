@@ -42,7 +42,8 @@ $ make db/migrate
 │
 ├── db/
 │   ├── migrate/
-│   └── scheme.rb
+│   ├── scheme.rb
+│   └── seeds.rb
 │
 ├── models/ (modelを定義するファイルを配置)
 │
@@ -94,11 +95,12 @@ $ make g/route name=ルート名
 
 使用する主なコマンドは以下のとおりです。
 
-| コマンド                   | 内容                         |
-| -------------------------- | ---------------------------- |
-| make compose/build         | Dockerのビルド               |
-| make compose/up            | Dockerを起動                 |
-| make db/migrate            | マイグレーション             |
-| make g/migrate name=名前   | マイグレーションファイル生成 |
-| make g/model name=モデル名 | モデル定義ファイル作成       |
-| make g/route name=ルート名 | ルート定義ファイル作成       |
+| コマンド                    | 内容                     |
+| -------------------------- | ----------------------- |
+| make compose/build         | Dockerのビルド           |
+| make compose/up            | Dockerを起動             |
+| make db/migrate            | マイグレーション           |
+| make db/seed               | シード実行                |
+| make g/migrate name=名前   | マイグレーションファイル生成  |
+| make g/model name=モデル名  | モデル定義ファイル作成       |
+| make g/route name=ルート名  | ルート定義ファイル作成       |
